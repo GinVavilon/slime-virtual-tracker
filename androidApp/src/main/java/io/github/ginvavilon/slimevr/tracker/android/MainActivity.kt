@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import io.github.ginvavilon.slimevr.tracker.androidDi
 import io.github.ginvavilon.slimevr.tracker.presentation.App
 import io.github.ginvavilon.slimevr.tracker.presentation.KoinApp
 import io.github.ginvavilon.slimevr.tracker.presentation.AppPreview
@@ -13,7 +14,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            KoinApp()
+            KoinApp {
+                modules(androidDi)
+            }
         }
     }
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="label_address" >Address</string>
+    <string name="label_port" >Port</string>
+    <string name="label_connect" >Connect</string>
+    <string name="label_disconnect" >Disconnect</string>
+</resources>

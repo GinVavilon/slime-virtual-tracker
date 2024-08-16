@@ -32,6 +32,12 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.koin.android)
+            implementation(libs.mlkit)
+            implementation(libs.mlkit.accurate)
+            implementation(libs.camerax)
+            implementation(libs.camerax.camera2)
+            implementation(libs.camerax.mlkit)
+            implementation(libs.accompanist.permissions)
         }
 
         commonMain.dependencies {

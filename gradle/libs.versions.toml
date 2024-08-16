@@ -6,12 +6,16 @@ compose-plugin = "1.7.0-alpha02"
 
 compose-material3 = "1.2.1"
 compose-navigation = "2.8.0-alpha08"
+camerax = "1.4.0-rc01"
 androidx-activityCompose = "1.9.1"
 jetbrainsKotlinJvm = "2.0.0"
 koin = "4.0.0-RC1"
 koin-compose = "4.0.0-RC1"
 koin-bom =  "4.0.0-RC1"
 ktor = "2.3.12"
+ml-kit = "18.0.0-beta5"
+accompanist = "0.34.0"
+
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -22,6 +26,10 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 compose-navigation = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "compose-navigation" }
+
+camerax = { module = "androidx.camera:camera-core", version.ref = "camerax" }
+camerax-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camerax" }
+camerax-mlkit = { module = "androidx.camera:camera-mlkit-vision", version.ref = "camerax" }
 
 androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "compose" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
@@ -34,6 +42,10 @@ ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
 ktor-network = { module = "io.ktor:ktor-network", version.ref = "ktor" }
+
+mlkit = { module = "com.google.mlkit:pose-detection", version.ref = "ml-kit" }
+mlkit-accurate = { module = "com.google.mlkit:pose-detection-accurate", version.ref = "ml-kit" }
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

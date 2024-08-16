@@ -57,7 +57,7 @@ fun <T> inputValueOf(
     return object : InputValue<T> {
         private var _value: T? = defaultValue
         override val value: T
-            get() = _value!!
+            get() = _value ?: throw IllegalStateException("Incorrect input value $state")
 
         private val _state = MutableStateFlow<State>(State.Normal(defaultValue.toString()))
         override val state: StateFlow<State> = _state.asStateFlow()
